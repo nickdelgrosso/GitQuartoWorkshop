@@ -150,6 +150,11 @@ Ole Bialas
 <li><a href="#/unit-1-git-and-github-workflows" id="/toc-unit-1-git-and-github-workflows">Unit 1: Git and GitHub Workflows</a>
 <ul>
 <li><a href="#/intro-git-terms" id="/toc-intro-git-terms">Intro: Git Terms</a></li>
+<li><a href="#/making-commits-adding-snapshots-to-your-project-history" id="/toc-making-commits-adding-snapshots-to-your-project-history">Making Commits: Adding Snapshots to Your Project History</a></li>
+<li><a href="#/making-backups-uploading-and-downloading-your-project" id="/toc-making-backups-uploading-and-downloading-your-project">Making Backups: Uploading and Downloading Your Project</a></li>
+<li><a href="#/making-sandboxes-managing-your-project-progress-with-branches" id="/toc-making-sandboxes-managing-your-project-progress-with-branches">Making Sandboxes: Managing Your Project Progress with Branches</a></li>
+<li><a href="#/markdown-syntax" id="/toc-markdown-syntax">Markdown Syntax</a></li>
+<li><a href="#/exercise-add-your-project-to-the-repo" id="/toc-exercise-add-your-project-to-the-repo">Exercise: Add your Project to the Repo</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -161,11 +166,10 @@ Ole Bialas
 </section>
 <section id="intro-git-terms" class="slide level2">
 <h2>Intro: Git Terms</h2>
+</section>
+<section id="making-commits-adding-snapshots-to-your-project-history" class="slide level2">
+<h2>Making Commits: Adding Snapshots to Your Project History</h2>
 <table class="caption-top">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Term</th>
@@ -185,28 +189,80 @@ Ole Bialas
 <td style="text-align: left;"><code>to Commit</code></td>
 <td style="text-align: left;">Save the latest snapshot in your repo history.</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"><code>a Branch</code></td>
-<td style="text-align: left;">a seperated repo history.</td>
+</tbody>
+</table>
+</section>
+<section id="making-backups-uploading-and-downloading-your-project" class="slide level2">
+<h2>Making Backups: Uploading and Downloading Your Project</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Term</th>
+<th style="text-align: left;">Description</th>
 </tr>
+</thead>
+<tbody>
 <tr class="odd">
-<td style="text-align: left;"><code>to Merge</code></td>
-<td style="text-align: left;">take the changes from one Branch and put them on another Branch.</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;"><code>a Remote</code></td>
 <td style="text-align: left;">a copy of the Project, where backups and merges can be made.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><code>to Push</code></td>
 <td style="text-align: left;">Download: to update a Remote Branch with your local Commits.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><code>to Pull</code></td>
 <td style="text-align: left;">Upload: to update your Local Branch with remote Commits.</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="making-sandboxes-managing-your-project-progress-with-branches" class="slide level2">
+<h2>Making Sandboxes: Managing Your Project Progress with Branches</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Term</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>a Branch</code></td>
+<td style="text-align: left;">a seperated repo history.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>to Merge</code></td>
+<td style="text-align: left;">take the changes from one Branch and put them on another Branch.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="markdown-syntax" class="slide level2">
+<h2>Markdown Syntax</h2>
+<p>??? Insert Markdown reference table here, just 6 most important examples, and link a cheat sheet online.</p>
+</section>
+<section id="exercise-add-your-project-to-the-repo" class="slide level2">
+<h2>Exercise: Add your Project to the Repo</h2>
+<ol type="1">
+<li>Clone the Repo to Your Local Machine.</li>
+<li>Create a folder in <code>projects/</code> called “<yourname>_<projectname>” In your project folder, create a <code>index.md</code> file and describe your project, making a commit and pushing the changes each time your make changes.</projectname></yourname></li>
+</ol>
+<p>File Layout: - Title - Project Purpose - A Sentence Describing the project - An interesting picture.</p>
+<p># Unit 2: Quarto: Putting Dynamic Code in Your Documents</p>
+<p>??? Insert a few slides here showing how to get started with quarto–creating a qmd file (don’t worry about render targets yet), some syntax for code cells.</p>
+<p>??? Add an exercise asking participants to turn their index.md files into index.qmd files, adding an “Analysis” section with some code cells in Python or R, as they prefer.</p>
+<p># Unit 3 Quarto Presentations: Rendering to RevealJS</p>
+<p>??? Insert a few slides about doing revealjs with quarto, sharing reference tables with syntax.</p>
+<p>??? Add an exercise asking participants to turn their qmd files into presentations.</p>
 
 </section></section>
     </div>
@@ -245,7 +301,7 @@ Ole Bialas
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': false,
+'smaller': true,
  
         // Display controls in the bottom right corner
         controls: false,

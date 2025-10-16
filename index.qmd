@@ -1,24 +1,68 @@
 ---
 title: "Collaborative Coding & Presentation Workshop"
-author: 
+author:
   - Nicholas A. Del Grosso
   - Ole Bialas
-format: revealjs
-theme: dark
-toc: true
+format:
+  revealjs:
+    theme: dark
+    toc: true
+    smaller: true
 ---
 
 # Unit 1: Git and GitHub Workflows 
 
 ## Intro: Git Terms
 
+## Making Commits: Adding Snapshots to Your Project History
+
 | Term | Description |
 | :-- | :-- |
 | `a Repo` | A Git project. |
 | `to Stage` | Select a batch of files to include in a commit. |
 | `to Commit` | Save the latest snapshot in your repo history. |
-| `a Branch` | a seperated repo history. |
-| `to Merge` | take the changes from one Branch and put them on another Branch. |
+
+## Making Backups: Uploading and Downloading Your Project
+
+| Term | Description |
+| :-- | :-- |
 | `a Remote` | a copy of the Project, where backups and merges can be made. |
 | `to Push` | Download: to update a Remote Branch with your local Commits. |
 | `to Pull` | Upload: to update your Local Branch with remote Commits. |
+
+## Making Sandboxes: Managing Your Project Progress with Branches
+| Term | Description |
+| :-- | :-- |
+| `a Branch` | a seperated repo history. |
+| `to Merge` | take the changes from one Branch and put them on another Branch. |
+
+
+## Markdown Syntax
+
+??? Insert Markdown reference table here, just 6 most important examples, and link a cheat sheet online.
+
+
+## Exercise: Add your Project to the Repo
+
+1. Clone the Repo to Your Local Machine.
+2. Create a folder in `projects/` called "<YourName>_<ProjectName>"
+In your project folder, create a `index.md` file and describe your project, making a commit and pushing the changes each time your make changes.
+  
+File Layout:
+  - Title 
+  - Project Purpose
+    - A Sentence Describing the project
+    - An interesting picture.
+  
+
+  # Unit 2: Quarto: Putting Dynamic Code in Your Documents
+
+  ??? Insert a few slides here showing how to get started with quarto--creating a qmd file (don't worry about render targets yet), some syntax for code cells.
+
+  ??? Add an exercise asking participants to turn their index.md files into index.qmd files, adding an "Analysis" section with some code cells in Python or R, as they prefer.
+
+  # Unit 3 Quarto Presentations: Rendering to RevealJS
+
+  ??? Insert a few slides about doing revealjs with quarto, sharing reference tables with syntax.
+
+  ??? Add an exercise asking participants to turn their qmd files into presentations.
