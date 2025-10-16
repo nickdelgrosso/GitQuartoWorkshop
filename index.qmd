@@ -39,7 +39,16 @@ format:
 
 ## Markdown Syntax
 
-??? Insert Markdown reference table here, just 6 most important examples, and link a cheat sheet online.
+| Syntax | Result |
+| :-- | :-- |
+| `# Heading 1` | Large heading |
+| `## Heading 2` | Subheading |
+| `**bold**` | **bold** text |
+| `*italic*` | *italic* text |
+| `[link text](url)` | Clickable link |
+| `![alt text](image.png)` | Embedded image |
+
+**Cheat Sheet:** [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
 
 ## Exercise: Add your Project to the Repo
@@ -55,14 +64,133 @@ File Layout:
     - An interesting picture.
   
 
-  # Unit 2: Quarto: Putting Dynamic Code in Your Documents
+# Unit 2: Quarto: Putting Dynamic Code in Your Documents
 
-  ??? Insert a few slides here showing how to get started with quarto--creating a qmd file (don't worry about render targets yet), some syntax for code cells.
+## What is Quarto?
 
-  ??? Add an exercise asking participants to turn their index.md files into index.qmd files, adding an "Analysis" section with some code cells in Python or R, as they prefer.
+- Open-source scientific publishing system
+- Write documents that combine text and executable code
+- Supports Python, R, Julia, and Observable
+- Output to multiple formats: HTML, PDF, presentations, websites
 
-  # Unit 3 Quarto Presentations: Rendering to RevealJS
+## Creating a Quarto Document
 
-  ??? Insert a few slides about doing revealjs with quarto, sharing reference tables with syntax.
+1. Create a file with `.qmd` extension
+2. Add YAML header with metadata
+3. Write markdown content
+4. Add code cells
 
-  ??? Add an exercise asking participants to turn their qmd files into presentations.
+## Code Cell Syntax
+
+**Python:**
+````markdown
+```{{python}}
+import pandas as pd
+print("Hello from Python!")
+```
+````
+
+**R:**
+````markdown
+```{{r}}
+library(ggplot2)
+print("Hello from R!")
+```
+````
+
+## Code Cell Options
+
+````markdown
+```{{python}}
+#| echo: false
+#| warning: false
+#| fig-cap: "My Plot"
+
+# Your code here
+```
+````
+
+Common options: `echo`, `eval`, `warning`, `message`, `fig-cap`, `fig-width`
+
+## Exercise: Add Analysis to Your Project
+
+1. Rename your `index.md` file to `index.qmd`
+2. Add an "Analysis" section
+3. Add code cells in Python or R that:
+   - Load or generate some data
+   - Perform basic analysis
+   - Create a visualization
+4. Render your document with `quarto render index.qmd`
+
+# Unit 3: Quarto Presentations with RevealJS
+
+## What is RevealJS?
+
+- HTML presentation framework
+- Create beautiful, interactive slides
+- Works seamlessly with Quarto
+- Navigate with arrow keys or touch
+
+## Creating a RevealJS Presentation
+
+**YAML Header:**
+```yaml
+---
+title: "My Presentation"
+format: revealjs
+---
+```
+
+## Slide Structure
+
+| Syntax | Purpose |
+| :-- | :-- |
+| `# Title` | New section (vertical navigation) |
+| `## Slide Title` | New slide |
+| `---` | New slide without title |
+| `::: {.incremental}` | Incremental reveal of list items |
+| `::: {.notes}` | Speaker notes |
+
+## RevealJS Options
+
+```yaml
+format:
+  revealjs:
+    theme: dark
+    smaller: true
+    scrollable: true
+    slide-number: true
+    preview-links: auto
+```
+
+## Two-Column Layout
+
+```markdown
+:::: {.columns}
+::: {.column width="50%"}
+Left content
+:::
+::: {.column width="50%"}
+Right content
+:::
+::::
+```
+
+## Code in Presentations
+
+- Code blocks work just like in documents
+- Use `echo: true` to show code
+- Use `echo: false` to hide code, show output only
+- Perfect for live demos!
+
+## Exercise: Create Your Presentation
+
+1. Convert your `index.qmd` to a presentation:
+   - Change `format` to `revealjs` in YAML
+   - Organize content with `##` for slides
+2. Add visual elements:
+   - Include your analysis/plots
+   - Try incremental lists
+   - Add speaker notes
+3. Render with `quarto render index.qmd`
+4. Open in browser and present!

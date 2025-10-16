@@ -29,6 +29,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-327cab17de08e4a17faa7d61f48ae591.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -156,6 +222,24 @@ Ole Bialas
 <li><a href="#/markdown-syntax" id="/toc-markdown-syntax">Markdown Syntax</a></li>
 <li><a href="#/exercise-add-your-project-to-the-repo" id="/toc-exercise-add-your-project-to-the-repo">Exercise: Add your Project to the Repo</a></li>
 </ul></li>
+<li><a href="#/unit-2-quarto-putting-dynamic-code-in-your-documents" id="/toc-unit-2-quarto-putting-dynamic-code-in-your-documents">Unit 2: Quarto: Putting Dynamic Code in Your Documents</a>
+<ul>
+<li><a href="#/what-is-quarto" id="/toc-what-is-quarto">What is Quarto?</a></li>
+<li><a href="#/creating-a-quarto-document" id="/toc-creating-a-quarto-document">Creating a Quarto Document</a></li>
+<li><a href="#/code-cell-syntax" id="/toc-code-cell-syntax">Code Cell Syntax</a></li>
+<li><a href="#/code-cell-options" id="/toc-code-cell-options">Code Cell Options</a></li>
+<li><a href="#/exercise-add-analysis-to-your-project" id="/toc-exercise-add-analysis-to-your-project">Exercise: Add Analysis to Your Project</a></li>
+</ul></li>
+<li><a href="#/unit-3-quarto-presentations-with-revealjs" id="/toc-unit-3-quarto-presentations-with-revealjs">Unit 3: Quarto Presentations with RevealJS</a>
+<ul>
+<li><a href="#/what-is-revealjs" id="/toc-what-is-revealjs">What is RevealJS?</a></li>
+<li><a href="#/creating-a-revealjs-presentation" id="/toc-creating-a-revealjs-presentation">Creating a RevealJS Presentation</a></li>
+<li><a href="#/slide-structure" id="/toc-slide-structure">Slide Structure</a></li>
+<li><a href="#/revealjs-options" id="/toc-revealjs-options">RevealJS Options</a></li>
+<li><a href="#/two-column-layout" id="/toc-two-column-layout">Two-Column Layout</a></li>
+<li><a href="#/code-in-presentations" id="/toc-code-in-presentations">Code in Presentations</a></li>
+<li><a href="#/exercise-create-your-presentation" id="/toc-exercise-create-your-presentation">Exercise: Create Your Presentation</a></li>
+</ul></li>
 </ul>
 </nav>
 </section>
@@ -248,7 +332,41 @@ Ole Bialas
 </section>
 <section id="markdown-syntax" class="slide level2">
 <h2>Markdown Syntax</h2>
-<p>??? Insert Markdown reference table here, just 6 most important examples, and link a cheat sheet online.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Syntax</th>
+<th style="text-align: left;">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code># Heading 1</code></td>
+<td style="text-align: left;">Large heading</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>## Heading 2</code></td>
+<td style="text-align: left;">Subheading</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>**bold**</code></td>
+<td style="text-align: left;"><strong>bold</strong> text</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>*italic*</code></td>
+<td style="text-align: left;"><em>italic</em> text</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>[link text](url)</code></td>
+<td style="text-align: left;">Clickable link</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>![alt text](image.png)</code></td>
+<td style="text-align: left;">Embedded image</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cheat Sheet:</strong> <a href="https://www.markdownguide.org/cheat-sheet/">Markdown Guide</a></p>
 </section>
 <section id="exercise-add-your-project-to-the-repo" class="slide level2">
 <h2>Exercise: Add your Project to the Repo</h2>
@@ -257,12 +375,170 @@ Ole Bialas
 <li>Create a folder in <code>projects/</code> called “<yourname>_<projectname>” In your project folder, create a <code>index.md</code> file and describe your project, making a commit and pushing the changes each time your make changes.</projectname></yourname></li>
 </ol>
 <p>File Layout: - Title - Project Purpose - A Sentence Describing the project - An interesting picture.</p>
-<p># Unit 2: Quarto: Putting Dynamic Code in Your Documents</p>
-<p>??? Insert a few slides here showing how to get started with quarto–creating a qmd file (don’t worry about render targets yet), some syntax for code cells.</p>
-<p>??? Add an exercise asking participants to turn their index.md files into index.qmd files, adding an “Analysis” section with some code cells in Python or R, as they prefer.</p>
-<p># Unit 3 Quarto Presentations: Rendering to RevealJS</p>
-<p>??? Insert a few slides about doing revealjs with quarto, sharing reference tables with syntax.</p>
-<p>??? Add an exercise asking participants to turn their qmd files into presentations.</p>
+</section></section>
+<section>
+<section id="unit-2-quarto-putting-dynamic-code-in-your-documents" class="title-slide slide level1 center">
+<h1>Unit 2: Quarto: Putting Dynamic Code in Your Documents</h1>
+
+</section>
+<section id="what-is-quarto" class="slide level2">
+<h2>What is Quarto?</h2>
+<ul>
+<li>Open-source scientific publishing system</li>
+<li>Write documents that combine text and executable code</li>
+<li>Supports Python, R, Julia, and Observable</li>
+<li>Output to multiple formats: HTML, PDF, presentations, websites</li>
+</ul>
+</section>
+<section id="creating-a-quarto-document" class="slide level2">
+<h2>Creating a Quarto Document</h2>
+<ol type="1">
+<li>Create a file with <code>.qmd</code> extension</li>
+<li>Add YAML header with metadata</li>
+<li>Write markdown content</li>
+<li>Add code cells</li>
+</ol>
+</section>
+<section id="code-cell-syntax" class="slide level2">
+<h2>Code Cell Syntax</h2>
+<p><strong>Python:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href=""></a><span class="in">```{python}</span></span>
+<span id="cb1-2"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href=""></a><span class="bu">print</span>(<span class="st">"Hello from Python!"</span>)</span>
+<span id="cb1-4"><a href=""></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>R:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href=""></a><span class="in">```{r}</span></span>
+<span id="cb2-2"><a href=""></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb2-3"><a href=""></a><span class="fu">print</span>(<span class="st">"Hello from R!"</span>)</span>
+<span id="cb2-4"><a href=""></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="code-cell-options" class="slide level2">
+<h2>Code Cell Options</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href=""></a><span class="in">```{python}</span></span>
+<span id="cb3-2"><a href=""></a><span class="co">#| echo: false</span></span>
+<span id="cb3-3"><a href=""></a><span class="co">#| warning: false</span></span>
+<span id="cb3-4"><a href=""></a><span class="co">#| fig-cap: "My Plot"</span></span>
+<span id="cb3-5"><a href=""></a></span>
+<span id="cb3-6"><a href=""></a><span class="co"># Your code here</span></span>
+<span id="cb3-7"><a href=""></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Common options: <code>echo</code>, <code>eval</code>, <code>warning</code>, <code>message</code>, <code>fig-cap</code>, <code>fig-width</code></p>
+</section>
+<section id="exercise-add-analysis-to-your-project" class="slide level2">
+<h2>Exercise: Add Analysis to Your Project</h2>
+<ol type="1">
+<li>Rename your <code>index.md</code> file to <code>index.qmd</code></li>
+<li>Add an “Analysis” section</li>
+<li>Add code cells in Python or R that:
+<ul>
+<li>Load or generate some data</li>
+<li>Perform basic analysis</li>
+<li>Create a visualization</li>
+</ul></li>
+<li>Render your document with <code>quarto render index.qmd</code></li>
+</ol>
+</section></section>
+<section>
+<section id="unit-3-quarto-presentations-with-revealjs" class="title-slide slide level1 center">
+<h1>Unit 3: Quarto Presentations with RevealJS</h1>
+
+</section>
+<section id="what-is-revealjs" class="slide level2">
+<h2>What is RevealJS?</h2>
+<ul>
+<li>HTML presentation framework</li>
+<li>Create beautiful, interactive slides</li>
+<li>Works seamlessly with Quarto</li>
+<li>Navigate with arrow keys or touch</li>
+</ul>
+</section>
+<section id="creating-a-revealjs-presentation" class="slide level2">
+<h2>Creating a RevealJS Presentation</h2>
+<p><strong>YAML Header:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href=""></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href=""></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Presentation"</span></span>
+<span id="cb4-3"><a href=""></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
+<span id="cb4-4"><a href=""></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="slide-structure" class="slide level2">
+<h2>Slide Structure</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Syntax</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code># Title</code></td>
+<td style="text-align: left;">New section (vertical navigation)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>## Slide Title</code></td>
+<td style="text-align: left;">New slide</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>---</code></td>
+<td style="text-align: left;">New slide without title</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>::: {.incremental}</code></td>
+<td style="text-align: left;">Incremental reveal of list items</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>::: {.notes}</code></td>
+<td style="text-align: left;">Speaker notes</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="revealjs-options" class="slide level2">
+<h2>RevealJS Options</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href=""></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href=""></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb5-3"><a href=""></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> dark</span></span>
+<span id="cb5-4"><a href=""></a><span class="at">    </span><span class="fu">smaller</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb5-5"><a href=""></a><span class="at">    </span><span class="fu">scrollable</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb5-6"><a href=""></a><span class="at">    </span><span class="fu">slide-number</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb5-7"><a href=""></a><span class="at">    </span><span class="fu">preview-links</span><span class="kw">:</span><span class="at"> auto</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="two-column-layout" class="slide level2">
+<h2>Two-Column Layout</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href=""></a>:::: {.columns}</span>
+<span id="cb6-2"><a href=""></a>::: {.column width="50%"}</span>
+<span id="cb6-3"><a href=""></a>Left content</span>
+<span id="cb6-4"><a href=""></a>:::</span>
+<span id="cb6-5"><a href=""></a>::: {.column width="50%"}</span>
+<span id="cb6-6"><a href=""></a>Right content</span>
+<span id="cb6-7"><a href=""></a>:::</span>
+<span id="cb6-8"><a href=""></a>::::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="code-in-presentations" class="slide level2">
+<h2>Code in Presentations</h2>
+<ul>
+<li>Code blocks work just like in documents</li>
+<li>Use <code>echo: true</code> to show code</li>
+<li>Use <code>echo: false</code> to hide code, show output only</li>
+<li>Perfect for live demos!</li>
+</ul>
+</section>
+<section id="exercise-create-your-presentation" class="slide level2">
+<h2>Exercise: Create Your Presentation</h2>
+<ol type="1">
+<li>Convert your <code>index.qmd</code> to a presentation:
+<ul>
+<li>Change <code>format</code> to <code>revealjs</code> in YAML</li>
+<li>Organize content with <code>##</code> for slides</li>
+</ul></li>
+<li>Add visual elements:
+<ul>
+<li>Include your analysis/plots</li>
+<li>Try incremental lists</li>
+<li>Add speaker notes</li>
+</ul></li>
+<li>Render with <code>quarto render index.qmd</code></li>
+<li>Open in browser and present!</li>
+</ol>
 
 </section></section>
     </div>
