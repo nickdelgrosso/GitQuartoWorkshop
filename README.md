@@ -1,3 +1,5 @@
+This is a commit.
+
 # Collaborative Coding & Presentation Workshop
 
 A hands-on workshop teaching Git/GitHub workflows, Quarto documents, and creating presentations with RevealJS.
