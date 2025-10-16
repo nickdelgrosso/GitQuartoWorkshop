@@ -6,9 +6,11 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
+  <meta name="author" content="Nicholas A. Del Grosso">
+  <meta name="author" content="Ole Bialas">
   <title>Collaborative Coding &amp; Presentation Workshop</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -28,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-0fde88a82f0356838740f155f1088782.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-327cab17de08e4a17faa7d61f48ae591.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -121,7 +123,7 @@
     }
   </style>
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
@@ -129,243 +131,84 @@
   <h1 class="title">Collaborative Coding &amp; Presentation Workshop</h1>
 
 <div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Nicholas A. Del Grosso 
+</div>
+</div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Ole Bialas 
+</div>
+</div>
 </div>
 
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Table of contents</h2>
 <ul>
-<li><a href="#/hands-on-git-quarto-reveal.js" id="/toc-hands-on-git-quarto-reveal.js">Hands-on Git, Quarto &amp; Reveal.js</a></li>
-<li><a href="#/exercise-1-git-github-basics" id="/toc-exercise-1-git-github-basics">Exercise 1: Git + GitHub Basics</a>
+<li><a href="#/unit-1-git-and-github-workflows" id="/toc-unit-1-git-and-github-workflows">Unit 1: Git and GitHub Workflows</a>
 <ul>
-<li><a href="#/exercise" id="/toc-exercise">Exercise</a></li>
-<li><a href="#/goal" id="/toc-goal">Goal</a></li>
-<li>
-<ul>
-<li><a href="#/code-reference-git-basics" id="/toc-code-reference-git-basics">Code Reference: Git Basics</a></li>
+<li><a href="#/intro-git-terms" id="/toc-intro-git-terms">Intro: Git Terms</a></li>
 </ul></li>
-<li><a href="#/exercise-2-quarto-python" id="/toc-exercise-2-quarto-python">Exercise 2: Quarto + Python</a>
-<ul>
-<li><a href="#/goal-1" id="/toc-goal-1">Goal</a></li>
-<li><a href="#/instructions-1" id="/toc-instructions-1">Instructions</a></li>
-</ul></li>
-<li><a href="#/code-reference-quarto-python" id="/toc-code-reference-quarto-python">Code Reference: Quarto + Python</a></li>
-
-</ul></li>
-<li><a href="#/exercise-3-reveal.js-slides-with-quarto" id="/toc-exercise-3-reveal.js-slides-with-quarto">Exercise 3: Reveal.js Slides with Quarto</a>
-<ul>
-<li><a href="#/goal-2" id="/toc-goal-2">Goal</a>
-<ul>
-<li><a href="#/instructions-2" id="/toc-instructions-2">Instructions</a></li>
-</ul></li>
-<li><a href="#/code-reference-reveal.js-with-quarto" id="/toc-code-reference-reveal.js-with-quarto">Code Reference: Reveal.js with Quarto</a></li>
-
-</ul></li>
-<li><a href="#/final-tips" id="/toc-final-tips">Final Tips</a></li>
 </ul>
 </nav>
 </section>
-<section id="hands-on-git-quarto-reveal.js" class="title-slide slide level1 center">
-<h1>Hands-on Git, Quarto &amp; Reveal.js</h1>
-<ul>
-<li>Team workflows<br>
-</li>
-<li>Literate programming<br>
-</li>
-<li>Python and Markdown together<br>
-</li>
-<li>Shareable slides &amp; self-contained docs</li>
-</ul>
-</section>
-
 <section>
-<section id="exercise-1-git-github-basics" class="title-slide slide level1 center">
-<h1>Exercise 1: Git + GitHub Basics</h1>
+<section id="unit-1-git-and-github-workflows" class="title-slide slide level1 center">
+<h1>Unit 1: Git and GitHub Workflows</h1>
 
 </section>
-<section id="exercise" class="slide level2">
-<h2>Exercise</h2>
-</section>
-<section id="goal" class="slide level2">
-<h2>Goal</h2>
-<p>Set up collaborative work using a shared GitHub repo, working in Markdown via VS Code.</p>
-<h4 id="instructions">Instructions</h4>
-<ul>
-<li>Clone the shared GitHub repository.</li>
-<li>Navigate to your own folder in the <code>scratch/</code> directory.</li>
-<li>Edit the <code>README.md</code> file: add an image, intro, or quote.</li>
-<li>Commit your changes and push.</li>
-<li>Pull changes from others.</li>
-<li>Open a pull request for peer review.</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="code-reference-git-basics">Code Reference: Git Basics</h3>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Task</th>
-<th>Command / Action</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Clone repo</td>
-<td><code>git clone &lt;url&gt;</code></td>
-</tr>
-<tr class="even">
-<td>Check status</td>
-<td><code>git status</code></td>
-</tr>
-<tr class="odd">
-<td>Add file(s)</td>
-<td><code>git add &lt;filename&gt;</code></td>
-</tr>
-<tr class="even">
-<td>Commit</td>
-<td><code>git commit -m "Message"</code></td>
-</tr>
-<tr class="odd">
-<td>Push to GitHub</td>
-<td><code>git push</code></td>
-</tr>
-<tr class="even">
-<td>Pull from GitHub</td>
-<td><code>git pull</code></td>
-</tr>
-<tr class="odd">
-<td>Create PR</td>
-<td>GitHub UI: “New pull request”</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="exercise-2-quarto-python" class="slide level2">
-<h2>Exercise 2: Quarto + Python</h2>
-<h3 id="goal-1">Goal</h3>
-<p>Learn to use <code>.qmd</code> files for literate programming with live code.</p>
-<h3 id="instructions-1">Instructions</h3>
-<ul>
-<li>Create a new <code>.qmd</code> file in your subfolder.</li>
-<li>Add a title and short explanation of your analysis.</li>
-<li>Import Python libraries.</li>
-<li>Add a plot or table using a real dataset or dummy data.</li>
-<li>Render the document as HTML.</li>
-</ul>
-</section>
-<section id="code-reference-quarto-python" class="slide level2">
-<h2>Code Reference: Quarto + Python</h2>
+<section id="intro-git-terms" class="slide level2">
+<h2>Intro: Git Terms</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 46%">
-<col style="width: 53%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Task</th>
-<th>Code / Tool</th>
+<th style="text-align: left;">Term</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Define Python code chunk</td>
-<td><code>```{python} ... ```</code></td>
+<td style="text-align: left;"><code>a Repo</code></td>
+<td style="text-align: left;">A Git project.</td>
 </tr>
 <tr class="even">
-<td>Print output inline</td>
-<td><code>print("Hello")</code></td>
+<td style="text-align: left;"><code>to Stage</code></td>
+<td style="text-align: left;">Select a batch of files to include in a commit.</td>
 </tr>
 <tr class="odd">
-<td>Display plot</td>
-<td><code>plt.plot(x, y)</code> or <code>sns.histplot(...)</code></td>
+<td style="text-align: left;"><code>to Commit</code></td>
+<td style="text-align: left;">Save the latest snapshot in your repo history.</td>
 </tr>
 <tr class="even">
-<td>Render to HTML</td>
-<td>Run <code>quarto render myfile.qmd</code></td>
+<td style="text-align: left;"><code>a Branch</code></td>
+<td style="text-align: left;">a seperated repo history.</td>
 </tr>
 <tr class="odd">
-<td>Execute interactively</td>
-<td>Use VS Code or RStudio’s Run Cell</td>
+<td style="text-align: left;"><code>to Merge</code></td>
+<td style="text-align: left;">take the changes from one Branch and put them on another Branch.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>a Remote</code></td>
+<td style="text-align: left;">a copy of the Project, where backups and merges can be made.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>to Push</code></td>
+<td style="text-align: left;">Download: to update a Remote Branch with your local Commits.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>to Pull</code></td>
+<td style="text-align: left;">Upload: to update your Local Branch with remote Commits.</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section class="slide level2">
 
 </section></section>
-<section>
-<section id="exercise-3-reveal.js-slides-with-quarto" class="title-slide slide level1 center">
-<h1>Exercise 3: Reveal.js Slides with Quarto</h1>
-
-</section>
-<section id="goal-2" class="slide level2">
-<h2>Goal</h2>
-<p>Use Reveal.js to build a live presentation with embedded code and results.</p>
-<h3 id="instructions-2">Instructions</h3>
-<ul>
-<li>Add <code>format: revealjs</code> to your <code>.qmd</code> YAML.</li>
-<li>Structure slides using headings (<code>##</code> for new slide).</li>
-<li>Use columns or <code>incremental</code> lists.</li>
-<li>Add visual elements (e.g., plots, images).</li>
-<li>Render to a self-contained HTML file.</li>
-</ul>
-</section>
-<section id="code-reference-reveal.js-with-quarto" class="slide level2">
-<h2>Code Reference: Reveal.js with Quarto</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 44%">
-<col style="width: 55%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Task</th>
-<th>Code / Syntax</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Start new slide</td>
-<td><code>## Slide Title</code></td>
-</tr>
-<tr class="even">
-<td>Add incremental list</td>
-<td><code>- item {.incremental}</code></td>
-</tr>
-<tr class="odd">
-<td>Two-column layout</td>
-<td><code>::: {.columns}</code> … <code>:::</code></td>
-</tr>
-<tr class="even">
-<td>Add image</td>
-<td><code>![alt text](path/to/image.png)</code></td>
-</tr>
-<tr class="odd">
-<td>Export to HTML</td>
-<td><code>quarto render file.qmd --to revealjs</code></td>
-</tr>
-<tr class="even">
-<td>Self-contained output</td>
-<td><code>embed-resources: true</code> in YAML</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
-</section></section>
-<section id="final-tips" class="title-slide slide level1 center">
-<h1>Final Tips</h1>
-<ul>
-<li>Use pull requests to collaborate smoothly.</li>
-<li>Use <code>.qmd</code> to combine Markdown, code, and results.</li>
-<li>Reveal.js lets you teach, share, and repeat with ease.</li>
-</ul>
-<p>🎯 Ask questions! Pair up. Push your changes.<br>
-👀 Live demo time next?</p>
-
-</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
