@@ -1,0 +1,107 @@
+---
+title: "Collaborative Coding & Presentation Workshop"
+format: revealjs
+theme: simple
+toc: true
+---
+
+# Hands-on Git, Quarto & Reveal.js  
+- Team workflows  
+- Literate programming  
+- Python and Markdown together  
+- Shareable slides & self-contained docs
+
+
+# Exercise 1: Git + GitHub Basics
+
+## Exercise
+
+## Goal
+Set up collaborative work using a shared GitHub repo, working in Markdown via VS Code.
+
+#### Instructions
+- Clone the shared GitHub repository.
+- Navigate to your own folder in the `scratch/` directory.
+- Edit the `README.md` file: add an image, intro, or quote.
+- Commit your changes and push.
+- Pull changes from others.
+- Open a pull request for peer review.
+
+---
+
+### Code Reference: Git Basics
+
+| Task                   | Command / Action                           |
+|------------------------|--------------------------------------------|
+| Clone repo             | `git clone <url>`                          |
+| Check status           | `git status`                               |
+| Add file(s)            | `git add <filename>`                       |
+| Commit                 | `git commit -m "Message"`                  |
+| Push to GitHub         | `git push`                                 |
+| Pull from GitHub       | `git pull`                                 |
+| Create PR              | GitHub UI: "New pull request"              |
+
+---
+
+## Exercise 2: Quarto + Python
+
+### Goal  
+Learn to use `.qmd` files for literate programming with live code.
+
+### Instructions
+- Create a new `.qmd` file in your subfolder.
+- Add a title and short explanation of your analysis.
+- Import Python libraries.
+- Add a plot or table using a real dataset or dummy data.
+- Render the document as HTML.
+
+---
+
+## Code Reference: Quarto + Python
+
+| Task                         | Code / Tool                      |
+|------------------------------|----------------------------------|
+| Define Python code chunk     | ` ```{python} ... ``` `         |
+| Print output inline          | `print("Hello")`                |
+| Display plot                 | `plt.plot(x, y)` or `sns.histplot(...)` |
+| Render to HTML               | Run `quarto render myfile.qmd`  |
+| Execute interactively        | Use VS Code or RStudio's Run Cell |
+
+---
+
+# Exercise 3: Reveal.js Slides with Quarto
+
+## Goal  
+Use Reveal.js to build a live presentation with embedded code and results.
+
+### Instructions
+- Add `format: revealjs` to your `.qmd` YAML.
+- Structure slides using headings (`##` for new slide).
+- Use columns or `incremental` lists.
+- Add visual elements (e.g., plots, images).
+- Render to a self-contained HTML file.
+
+---
+
+## Code Reference: Reveal.js with Quarto
+
+| Task                              | Code / Syntax                              |
+|-----------------------------------|--------------------------------------------|
+| Start new slide                   | `## Slide Title`                           |
+| Add incremental list              | `- item {.incremental}`                    |
+| Two-column layout                 | `::: {.columns}` ... `:::`                 |
+| Add image                         | `![alt text](path/to/image.png)`           |
+| Export to HTML                    | `quarto render file.qmd --to revealjs`     |
+| Self-contained output             | `embed-resources: true` in YAML            |
+
+---
+
+# Final Tips
+
+- Use pull requests to collaborate smoothly.
+- Use `.qmd` to combine Markdown, code, and results.
+- Reveal.js lets you teach, share, and repeat with ease.
+
+🎯 Ask questions! Pair up. Push your changes.  
+👀 Live demo time next?
+
