@@ -54,14 +54,17 @@ format:
 ## Exercise 1: Add your Project to the Repo
 
 1. Clone the Repo to Your Local Machine.
-2. Create a folder in `projects/` called "<YourName>_<ProjectName>"
+2. Create a folder in `projects/` called "YourName_ProjectName"
 3. In your project folder, create a `README.md` file and describe your project, making a commit and pushing the changes each time your make changes.
 
 File Layout:
+
+```
   - Title
   - Project Purpose
     - A Sentence Describing the project
     - An interesting picture.
+```
 
 ## Exercise 2: Practice Branching and Pull Requests
 
@@ -76,65 +79,7 @@ File Layout:
 7. Review and merge your partner's Pull Request
 8. Have them merge yours!
 
-# Unit 2: Quarto: Putting Dynamic Code in Your Documents
-
-## What is Quarto?
-
-- Open-source scientific publishing system
-- Write documents that combine text and executable code
-- Supports Python, R, Julia, and Observable
-- Output to multiple formats: HTML, PDF, presentations, websites
-
-## Creating a Quarto Document
-
-1. Create a file with `.qmd` extension
-2. Add YAML header with metadata
-3. Write markdown content
-4. Add code cells
-
-## Code Cell Syntax
-
-**Python:**
-````markdown
-```{{python}}
-import pandas as pd
-print("Hello from Python!")
-```
-````
-
-**R:**
-````markdown
-```{{r}}
-library(ggplot2)
-print("Hello from R!")
-```
-````
-
-## Code Cell Options
-
-````markdown
-```{{python}}
-#| echo: false
-#| warning: false
-#| fig-cap: "My Plot"
-
-# Your code here
-```
-````
-
-Common options: `echo`, `eval`, `warning`, `message`, `fig-cap`, `fig-width`
-
-## Exercise: Add Analysis to Your Project
-
-1. Rename your `README.md` file to `index.qmd`
-2. Add an "Analysis" section
-3. Add code cells in Python or R that:
-   - Load or generate some data
-   - Perform basic analysis
-   - Create a visualization
-4. Render your document with `quarto render index.qmd`
-
-# Unit 3: Quarto Presentations with RevealJS
+# Unit 2: Quarto Presentations with RevealJS
 
 ## What is RevealJS?
 
@@ -206,3 +151,61 @@ Right content
    - Add speaker notes
 3. Render with `quarto render index.qmd`
 4. Open in browser and present!
+
+# Unit 3: Quarto: Putting Dynamic Code in Your Documents
+
+## What is Quarto?
+
+- Open-source scientific publishing system
+- Write documents that combine text and executable code
+- Supports Python, R, Julia, and Observable
+- Output to multiple formats: HTML, PDF, presentations, websites
+
+## Creating a Quarto Document
+
+1. Create a file with `.qmd` extension
+2. Add YAML header with metadata
+3. Write markdown content
+4. Add code cells
+
+## Code Cell Syntax
+
+**Python:**
+````markdown
+```{{python}}
+import pandas as pd
+print("Hello from Python!")
+```
+````
+
+**R:**
+````markdown
+```{{r}}
+library(ggplot2)
+print("Hello from R!")
+```
+````
+
+## Code Cell Options
+
+````markdown
+```{{python}}
+#| echo: false
+#| warning: false
+#| fig-cap: "My Plot"
+
+# Your code here
+```
+````
+
+Common options: `echo`, `eval`, `warning`, `message`, `fig-cap`, `fig-width`
+
+## Exercise: Add Analysis to Your Project
+
+1. Rename your `README.md` file to `index.qmd`
+2. Add an "Analysis" section
+3. Add code cells in Python or R that:
+   - Load or generate some data
+   - Perform basic analysis
+   - Create a visualization
+4. Render your document with `quarto render index.qmd`
