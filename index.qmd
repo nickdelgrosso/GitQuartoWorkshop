@@ -51,18 +51,30 @@ format:
 **Cheat Sheet:** [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
 
-## Exercise: Add your Project to the Repo
+## Exercise 1: Add your Project to the Repo
 
 1. Clone the Repo to Your Local Machine.
 2. Create a folder in `projects/` called "<YourName>_<ProjectName>"
-In your project folder, create a `index.md` file and describe your project, making a commit and pushing the changes each time your make changes.
-  
+3. In your project folder, create a `README.md` file and describe your project, making a commit and pushing the changes each time your make changes.
+
 File Layout:
-  - Title 
+  - Title
   - Project Purpose
     - A Sentence Describing the project
     - An interesting picture.
-  
+
+## Exercise 2: Practice Branching and Pull Requests
+
+**Note:** The `main` branch is now protected - you cannot push directly to it!
+
+1. Create a new branch locally
+2. Make changes to your project's `readme.md` file
+3. Commit your changes
+4. Push your branch to the remote
+5. Go to GitHub and create a Pull Request from your branch to `main`
+6. Find a partner sitting next to you
+7. Review and merge your partner's Pull Request
+8. Have them merge yours!
 
 # Unit 2: Quarto: Putting Dynamic Code in Your Documents
 
@@ -114,7 +126,7 @@ Common options: `echo`, `eval`, `warning`, `message`, `fig-cap`, `fig-width`
 
 ## Exercise: Add Analysis to Your Project
 
-1. Rename your `index.md` file to `index.qmd`
+1. Rename your `README.md` file to `index.qmd`
 2. Add an "Analysis" section
 3. Add code cells in Python or R that:
    - Load or generate some data
